@@ -70,13 +70,13 @@ for (let i = 0; i < Btnslider.length; i++) {
         }
         Btnslider[i].classList.add("atv")
         if(i === 0){
-            Div.style.backgroundImage = 'url("Banner\ do\ C.png")'
+            Div.style.backgroundImage = 'url("Banner do C.png")'
             tc.textContent = "Tópicos de C e C++"
         } else if(i === 1){
-            Div.style.backgroundImage = 'url("Banner\ do\ Java.png")'
+            Div.style.backgroundImage = 'url("Banner do Java.png")'
             tc.textContent = "Liguagem Java"
         } else if(i === 2){
-            Div.style.backgroundImage = 'url("Banner\ do\ SQL.png")'
+            Div.style.backgroundImage = 'url("Banner do SQL.png")'
             tc.textContent = "SQL Avançado"
         }
     })
