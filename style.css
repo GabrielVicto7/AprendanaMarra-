@@ -1,0 +1,1366 @@
+/* ------ Elementos gerais ------*/
+/*-------------------------------*/
+
+/* ------ Body ------ */
+
+body{
+    background-color: rgb(17, 17, 17);
+    font-family: 'HammersmithOne';
+    user-select: none;
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'HammersmithOne';
+    src: url('HammersmithOne-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+/* ------ Menu Horizontal ------ */
+
+#MenuHorizontal{
+    width: 100%;
+    height: 11vh;
+    background-color: rgb(17, 17, 17);
+    box-shadow:  0 0.2vh rgb(43, 43, 43);
+    position: sticky;
+    top: 0;
+    z-index: 4;
+}
+
+#Logo{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    width: 37vh;
+    height: 8vh;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translate(0,-50%);
+}
+
+#Img_Logo{
+    height: 7.4vh;
+    -webkit-user-drag: none;
+}
+
+#Texto_da_Logo{
+    color: white;
+    font-size: 3vh;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(0,-50%);
+}
+
+.Linhas{
+    height: 8.8vh;
+    width: 0.2vh;
+    background-color: rgb(36, 36, 39);
+    border: 0;
+}
+
+#Linha_1{
+    position: absolute;
+    left: 6%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+#DivIconmenu{
+    width: 7.5vh;
+    height: 7.5vh;
+    background-color: transparent;
+    position: absolute;
+    left: 1.2%;
+    top: 50%;
+    transform: translate(0,-50%);
+    border-radius: 30px;
+    transition: 0.35 ease-out;
+}
+
+#DivIconmenu:hover{
+    background-color: rgb(43, 43, 43);
+}
+
+#IconMenu{
+    font-size: 30px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 55%;
+    transform: translate(-50%,-50%);
+}
+
+#Linha_2{
+    position: absolute;
+    left: 27.6%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+#InputPes{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    height: 3vh;
+    width: 50vh;
+    padding: 1.5vh;
+    border-radius: 2vh;
+    border: 0.36vh solid rgb(61, 26, 203);
+    padding-left: 2.5vh;
+    background-color:white;
+    color: rgb(61, 26, 203);
+    padding-right: 12vh;
+}
+
+#IconedePesquisaDiv{
+    background-color: rgb(36, 36, 39);
+    width: 4.3vh;
+    height: 4.3vh;
+    border-radius: 3vh;
+    color: white;
+    border: 0.4vh solid rgb(61, 26, 203);
+    cursor: pointer;
+}
+
+#BarradePesquisa{
+    display: flex;
+    flex-direction: row;
+}
+
+#IconedePesquia{
+    font-size: 2vh;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#IconedePesquisaDiv{
+    position: absolute;
+    left: 62.5%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+#IconedeApagarPesquisaDiv{
+    position: absolute;
+    left: 60.2%;
+    top: 53%;
+    transform: translate(0,-50%);
+}
+
+#IconedeApagarPesquisa{
+    color: rgb(36, 36, 39);
+    font-size: 4vh;
+    cursor: pointer;
+}
+
+#BtnContaDiv{
+    position: absolute;
+    left: 87.4%;
+    top: 53%;
+    transform: translate(0,-50%);
+}
+
+#BtnConta{
+    width: 22vh;
+    height: 5vh;
+    font-size: 2.5vh;
+    background-color:  rgb(43, 43, 43);
+    color: white;
+    border: white 0.3vh solid;
+    border-radius: 2vh;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+#BtnConta:hover{
+    background-color:rgb(61, 26, 203);
+}
+
+#Linha_3{
+    position: absolute;
+    left: 84.8%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+/* ------ Menu Vertical ------ */
+
+#MenuVertical{
+    position: fixed;
+    width: 12.7vh;
+    height: 100%;
+    background-color: rgb(17, 17, 17);
+    z-index: 2;
+    box-shadow: 0.2vh 0 rgb(43, 43, 43);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5vh;
+    padding-top: 3vh;
+    transition: width 0.3s linear;
+}
+
+.TXTMenuVer{
+    display: none;
+    font-size: 3vh;
+    color: white;
+    padding-left: 3vh;
+    padding-top: 0.4vh;
+}
+
+.BtnMenuve{
+    width: 8.6vh;
+    height: 8.6vh;
+    background-color: rgb(23, 23, 23);
+    text-align: center;
+    border-radius: 2.6vh;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+} 
+
+#MenuVertical a{
+    text-decoration: none;
+}
+
+.IconsMenuver{
+    color: white;
+    font-size: 4.3vh;
+    padding-top: 1.9vh;
+}
+
+.AtivoMenVer{
+    background-color: rgb(61, 26, 203);
+}
+
+/* ------ Rodapé ------ */
+
+.Rodapé{
+    width: 197.4vh;
+    height: 34vh;
+    background-color: transparent;
+    box-shadow:  0 -0.2vh rgb(43, 43, 43);
+}
+
+#LogoRodapé{
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    width: 30vh;
+    height: 6vh;
+    position: absolute;
+    top: 10%;
+    left:50%;
+    transform: translate(-50%);
+}
+
+#Img_LogoRod{
+    -webkit-user-drag: none;
+}
+
+#RedesSociais{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%);
+    background-color: transparent;
+    width: 20vh;
+}
+
+.Icons img{
+    width: 4vh;
+    height: 4vh;
+    border-radius: 1.4vh;
+    cursor: pointer;
+}
+
+#IconsYou{
+    width: 7vh;
+    height: 7vh;
+    border-radius: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: -30%;
+    cursor: pointer;
+}
+
+#Texto_da_LogoRod{
+    color: white;
+    font-size: 2.4vh;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(0,-50%);
+}
+
+#TxtRodapé{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    text-align: justify;
+    width: 50vh;
+    height: 12Vh;
+    font-size: 2.2vh;
+    position: absolute;
+    top: 37%;
+    left: 11%;
+}
+
+#TextCop{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 2.4vh;
+    font-weight: bold;
+}
+
+.LinhaRod{
+    height: 31vh;
+    width: 0.2vh;
+    background-color: rgb(36, 36, 39);
+    border: 0;
+}
+
+#LinhaRod_1{
+    position: absolute;
+    left: 8%;
+    top: 53%;
+    transform: translate(0,-50%);
+}
+
+#Links{
+    position: absolute;
+    top: 16%;
+    left: 56%;
+    transform: translate(-50%);
+    background-color: transparent;
+    color: white;
+    width: 40vh;
+    height: 30vh;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#Links h1{
+    color: white;
+    padding-bottom: 3vh;
+    font-size: 3vh;
+}
+
+#Links ul{
+    list-style-type: none;
+}
+
+#Links li{
+    padding-bottom: 1vh;
+}
+
+#Links a{
+    padding-left: 1vh;
+}
+
+#LinhaRod_2{
+    position: absolute;
+    left: 40%;
+    top: 53%;
+    transform: translate(0,-50%);
+}
+
+#ContatoRedesSociais{
+    position: absolute;
+    left: 67%;
+    top: 16%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+#ContatoRedesSociais h3{
+    font-size: 3vh;
+    padding-bottom: 2vh;
+}
+
+#ContatoRedesSociais p{
+    padding-bottom: 2vh;
+    font-size: 2.1vh;
+    user-select:text;
+    -webkit-user-select: text; 
+    -ms-user-select: text;
+}
+
+#LinhaRod_3{
+    position: absolute;
+    left: 60.5%;
+    top: 53%;
+    transform: translate(0,-50%);
+}
+
+#LinhaRod_4{
+    position: absolute;
+    left: 92%;
+    top: 53%;
+    transform: translate(0,-50%);
+}
+
+#LinhaRod_5{
+    position: absolute;
+    left: 4%;
+    top: 53%;
+    transform: translate(0,-50%);
+}
+
+#LinhaRod_6{
+    position: absolute;
+    left: 96%;
+    top: 53%;
+    transform: translate(0,-50%);
+}
+
+/* ------ Cursos ------*/
+/*---------------------*/
+
+/* ------ Body ------ */
+
+#BodyCursos{
+    background-color: rgb(17, 17, 17);
+    height: 240vh;
+    font-family: 'HammersmithOne';
+    user-select: none;
+    -webkit-user-select: none; 
+    -ms-user-select: none;
+}
+
+/* ------ Conteúdo principal ------ */
+
+#ContinueVendoDiv{
+    width: 70vh;
+    height: 50vh;
+    background-color: transparent;
+    position: absolute;
+    top: 1.3%;
+    left: 2.6%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.ApresentaçãodoCurso{
+    width: 60vh;
+    height: 40vh;
+    background-color: rgb(23, 23, 23); 
+    border-radius: 2vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.Geral:hover{
+    background-color: rgb(61, 26, 203); 
+    transition: 0.2s;
+}
+
+#FazerLogin {
+    position: absolute;
+    top: 12.5%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 25vh;
+    height: 7vh;
+    font-size: 2.5vh;
+    background-color: rgb(61, 26, 203);
+    color: white;
+    border: white 0.3vh solid;
+    border-radius: 1vh;
+    cursor: pointer;
+    transition: 0.2s ease;
+    filter: none;
+    z-index: 2;
+}
+
+#FazerLogin_Exe{
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%);
+    width: 25vh;
+    height: 7vh;
+    font-size: 2.5vh;
+    background-color: rgb(61, 26, 203);
+    color: white;
+    border: white 0.3vh solid;
+    border-radius: 1vh;
+    cursor: pointer;
+    transition: 0.2s ease;
+    filter: none;
+    z-index: 2;
+}
+
+#ContinueVendo{
+    position: absolute;
+    top: 22%;
+    left: 0%;
+}
+
+#LinhaHor{
+    width: 185vh;
+    height: 0.1vh;
+    border: 0;
+    background-color: rgb(43, 43, 43);
+    position: absolute;
+    top: 24.5%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#ConteudoPrinCur{
+    background-color: black;
+    width: 197.4vh;
+    height: 240vh;
+    position: absolute;
+    left: 6.2%; 
+}
+
+#TodosCursos{
+    width: 185vh;
+    height: 120vh;
+    background-color:transparent;
+    position: absolute;
+    top: 26.6%;
+    left: 3%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+#OrgCursos{
+    padding-top: 4.8vh;
+    background-color:transparent;
+    display: flex; 
+    flex-wrap: wrap; 
+    width: 185vh;
+    height: 90vh;
+    gap: 2.45vh;
+}
+
+.ImgIMP{
+    width: 54vh;
+    height: 25vh;
+    border-radius: 3vh;
+    background-color: rgb(232, 255, 255);
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top: 5%;
+}
+
+.TxtApresentaçãoCurso{
+    font-size: 3.6vh;
+    position: absolute;
+    left: 4.7%;
+    top: 70%;
+}
+
+.Carateristicas{
+    width: 17vh;
+    height: 3.8vh;
+    background-color: rgb(40, 40, 40);
+    border-radius: 1.5vh;
+    font-size: 1.7vh;
+    text-align: center;
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+}
+
+.TxtCar{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.CarateristicasDiv{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    position: absolute;
+    top: 84%;
+    left: 4.8%;
+}
+
+.Pre{
+    width: 187.4vh;
+    height: 40vh;
+    cursor:auto;
+    filter: brightness(0.2);
+    background-color: rgb(23, 23, 23); 
+    border-radius: 2vh;
+    overflow-x: scroll; 
+    scrollbar-width: thin; 
+    scrollbar-color: rgb(100, 100, 100) rgb(20, 20, 20);
+}
+
+#Rodapét{
+    position: absolute;
+    top: 220%;
+    left: 6.2%;
+    background-color: rgb(17, 17, 17);
+}
+
+/* ------ Início ------*/
+/*---------------------*/
+
+#BaseImg {
+    width: 187.4vh; 
+    height: 65vh; 
+    background-color: transparent; 
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 1.8%;
+    border-radius: 1vh;
+    background-image: url("Imagens/Banner Início.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+#BodyInício{
+    height: 280vh;
+}
+
+#ConteudoPrinInício{
+    background-color:rgb(0, 0, 0);
+    width: 197.4vh;
+    height: 270vh;
+    position: absolute;
+    left: 6.2%; 
+}
+
+#ConteudoPrinCon{
+    background-color:rgb(0, 0, 0);
+    width: 197.4vh;
+    height: 60vh;
+    position: absolute;
+    left: 6.2%; 
+}
+
+#Bodycon{
+    height: 60vh;
+}
+
+#LinhaConPriIN{
+    width: 187.4vh;
+    height: 0.1vh;
+    background-color: rgb(43, 43, 43);
+    position: absolute;
+    top: 27.5%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#LinhaConPriIN3{
+    width: 187.4vh;
+    height: 0.1vh;
+    background-color: rgb(43, 43, 43);
+    position: absolute;
+    top: 75.6%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+#ComeçarLogin{
+    width: 60vh;
+    height: 48vh;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    left: 63.6%;
+    top: 50%;
+    transform: translate(0,-50%);
+    border-radius: 3vh;
+    box-shadow: 0.4vh 0.4vh 4vh;
+    display: flex;
+    flex-direction: column;
+}
+
+#ComeçarLogin h3{
+    font-size: 4.5vh;
+    position: absolute;
+    left: 7%;
+    top: 7%;
+}
+
+#ComeçarLogin i{
+    font-size: 3vh;
+}
+
+#ComeçarLogin h1{
+    font-size: 6vh;
+    position: absolute;
+    left: 7%;
+    top: 23%;
+}
+
+#ComeçarLogin button{
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top: 45%;
+    width: 51.5vh;
+    height: 10vh;
+    border-radius: 2vh;
+    border: 0;
+    background-color: rgb(61, 26, 203);
+    font-size: 3vh;
+    color: white;
+    cursor: pointer;
+}
+
+#ComeçarLogin p{
+    position: absolute;
+    left: 7.4%;
+    top: 72.8%;
+}
+
+#Ddiv{
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top: 29.2%;
+    width: 187.4vh; 
+    height: 50vh; 
+    border-radius: 2vh;
+    border: 0.3vh solid rgb(43, 43, 43);
+    background-color: transparent;
+    font-size: 3vh;
+    color: white;
+}
+
+#Ddiv h2{
+    position: absolute;
+    top: 6%;
+    left: 2%;
+}
+
+.l{
+    width: 45vh;
+    height: 34vh;
+    background-color: rgb(23, 23, 23);
+    border-radius: 2vh;
+    position: relative;
+}
+
+#Ki{
+    display:flex;
+    flex-direction: row;
+    gap: 5vh;
+    position: absolute;
+    top: 23.5%;
+    left: 2.2%;
+}
+
+#IMh{
+    width: 35vh;
+    position: absolute;
+    left: 80.8%;
+    top: 20%;
+}
+
+#Ddiv h4{
+    position: absolute;
+    top: 8%;
+    left: 7%;
+    font-weight: normal;
+}
+
+.p{
+    font-size: 3.2vh;
+    position: absolute;
+    top: 9%;
+    left: 107%;
+}
+
+#Ddiv p{
+    font-size: 2vh;
+    background-color: transparent;
+    font-family: Arial;
+    width: 38.5vh;
+    height: 20vh;
+    position: absolute;
+    top: 28.5%;
+    left: 7%;
+    text-align: justify;
+}
+
+#AlgunsCursos{
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top:  49%;
+    width: 187.4vh; 
+    height: 66vh; 
+    border-radius: 2vh;
+    border: 0.2vh solid rgb(43, 43, 43);
+    background-color: transparent;
+    font-size: 3vh;
+    color: white;
+}
+
+#Rodapéf{
+    width: 197.4vh;
+    height: 34vh;
+    position: absolute;
+    left: 6.2%; 
+    top: 281%;
+    background-color: transparent;
+    box-shadow:  0 -0.2vh rgb(43, 43, 43);
+}
+
+#Rodapék{
+    width: 197.4vh;
+    height: 34vh;
+    position: absolute;
+    left: 6.2%; 
+    top: 281%;
+    background-color: transparent;
+    box-shadow:  0 -0.2vh rgb(43, 43, 43);
+}
+
+#Rodapéd{
+    width: 197.4vh;
+    height: 34vh;
+    position: absolute;
+    left: 6.2%; 
+    top: 71%;
+    background-color: transparent;
+    box-shadow:  0 -0.2vh rgb(43, 43, 43);
+}
+
+#k{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#Rodapép{
+    width: 197.4vh;
+    height: 34vh;
+    position: absolute;
+    left: 6.2%; 
+    top: 101%;
+    background-color: transparent;
+    box-shadow:  0 -0.2vh rgb(43, 43, 43);
+}
+
+#BodySore{
+    height: 90vh;
+}
+
+#Titulod{
+    color: white;
+    position: absolute;
+    left: 9%;
+    top: 14.8%;
+    z-index: 2;
+}
+
+#Linahsobr{
+    width: 186vh;
+    height: 0.1vh;
+    background-color: rgb(43, 43, 43);
+    position: absolute;
+    top: 78%;
+    left: 9%;
+    z-index: 2;
+}
+
+#Cont{
+    color: white;
+    position: absolute;
+    top: 81.6%;
+    left: 9%;
+    z-index: 2;
+}
+
+#SSig{
+    color: white;
+    position: absolute;
+    top: 82.2%;
+    left: 36%;
+    z-index: 2;
+} 
+
+#RedesSociaisdfw{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 41%;
+    top: 92%;
+    transform: translate(-50%);
+    background-color: transparent;
+    width: 20vh;
+    z-index: 2;
+}
+
+#Linhaf{
+    position: absolute;
+    top: 81.6%;
+    left: 34%;
+    border: 0.1vh solid rgb(43, 43, 43);;
+    z-index: 2;
+    height: 16vh;
+}
+
+#Linhaç{
+    position: absolute;
+    top: 81.6%;
+    left: 49.7%;
+    border: 0.1vh solid rgb(43, 43, 43);;
+    z-index: 2;
+    height: 16vh;
+}
+
+#email{
+    color: white;
+    position: absolute;
+    top: 90.6%;
+    left: 9%;
+    z-index: 2;
+    font-size: 3.4vh;
+}
+
+#Autistas{
+    color: white;
+    position: absolute;
+    left: 84.2%;
+    top: 14.8%;
+    z-index: 2;
+}
+
+#SObren{
+    border: 0.3vh solid rgb(43, 43, 43);
+    width: 110vh;
+    height: 50vh;
+    position: absolute;
+    border-radius: 2vh;
+    left: 9%;
+    z-index: 2;
+    top: 24%;
+}
+
+#ImgLogoOi{
+    width: 40vh;
+    position: absolute;
+    left: 59%;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+#Autista h2{
+    font-size: 4.5vh;
+}
+
+#Autista1{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 28%;
+}
+
+#Homo{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 45%;
+}
+
+#Autistta2{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 62%;
+}
+
+#Cr7{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 79%;
+}
+
+#Vereador{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 11%;
+}
+
+#Autista{
+    border: 0.3vh solid rgb(43, 43, 43);
+    width: 70vh;
+    height: 50vh;
+    position: absolute;
+    border-radius: 2vh;
+    left: 64%;
+    z-index: 2;
+    top: 24%;
+}
+
+#txt{
+    background-color:transparent;
+    width: 56vh; 
+    position: absolute;
+    left: 4.4%;
+    height: 40vh;
+    color: white;
+    font-size: 3.76vh;
+    line-height: 4.48vh;
+    text-align: justify;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+#ConteudoPrinSObre{
+    background-color:rgb(0, 0, 0);
+    width: 197.4vh;
+    height: 90vh;
+    position: absolute;
+    left: 6.2%;
+}
+
+#AlgunsCursos h2{
+    position: absolute;
+    top: 4%;
+    left: 3%;
+}
+
+#ImgCursos{
+    width: 176.5vh;
+    height: 50vh;
+    background-image: url("Imagens/Banner\ do\ C.png");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    border-radius: 2vh;
+    position: absolute;
+    top: 17%;
+    left: 3%;
+    transition: 0.6s ease-in-out;
+}
+
+#Btnsdiv{
+    position: absolute;
+    transform: translate(-50%,-96%);
+    left: 50%;
+    top: 96%;
+    width: 13vh;
+    height: 3vh;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    gap: 3vh;
+}
+
+.btnsd{
+    width: 2vh;
+    height: 2vh;
+    background-color: grey;
+    border: 0.2vh black solid;
+    border-radius: 9vh;
+    cursor: pointer;
+}
+
+#o{
+    position: absolute;
+    top: 6%;
+    left: 2.5%;
+    font-size: 5vh;
+}
+
+.CarateristicasDivMenu{
+    display: flex;
+    flex-direction: row;
+    gap: 2vh;
+    position: absolute;
+    left: 2.5%;
+    top: 22%;
+}
+
+#Planos{
+    position: relative;
+    transform: translate(-50%);
+    left: 50%;
+    top:  77.5%;
+    width: 187.4vh; 
+    height: 56vh; 
+    border-radius: 2vh;
+    border: 0.2vh solid rgb(43, 43, 43);
+    background-color: transparent;
+}
+
+#Planos h2{
+    position: absolute;
+    top: 6%;
+    left: 2.5%;
+    font-size: 5vh;
+    color: white;
+}
+
+#MenuDivs{
+    background-color: transparent;
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top: 23%;
+    width: 178vh;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    gap: 7vh;
+}
+
+.Pnal{
+    width: 55vh;
+    height: 40vh;
+    background-color:rgb(23, 23, 23);
+    border-radius: 2vh;
+    position: relative;
+}
+
+.Pnal h3{
+    color: white;
+    position: absolute;
+    left: 3.5%;
+    top: 5%;
+    font-size: 2.5vh;
+}
+
+#PlanoGra h3{
+    background-color: rgb(0, 0, 0);
+    width: 24vh;
+    text-align: center;
+    height: 4vh;
+    border-radius: 2vh;
+    position: absolute;
+    padding-top: 1vh;
+}
+
+#PlanPrr h3{
+    background-color:rgb(61, 26, 203);
+    width: 25vh;
+    text-align: center;
+    height: 4vh;
+    border-radius: 2vh;
+    position: absolute;
+    padding-top: 1vh;
+}
+
+#PlanPlsi h3{
+    background-color:rgb(203, 153, 26);
+    width: 29vh;
+    text-align: center;
+    height: 4vh;
+    border-radius: 2vh;
+    position: absolute;
+    padding-top: 1vh;
+}
+
+.Valor{
+    background-color: transparent;
+    width: 44vh;
+    height: 6vh;
+    position: absolute;
+    top: 23%;
+    left: 3.5%;
+}
+
+.Asssianr{
+    width: 48vh;
+    height: 7vh;
+    position: absolute;
+    top: 46%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: rgb(61, 26, 203);
+    border: 0;
+    border-radius: 2vh;
+    color: white;
+    font-size: 2.6vh;
+    cursor: pointer;
+}
+
+#Vantagens{
+    color: white;
+    position: absolute;
+    left: 7%;
+    top: 70%;
+}
+
+.atv{
+    filter: brightness(0.6);
+}
+
+#IconsTkt{
+    width: 6vh;
+    height: 6vh;
+    position: absolute;
+    left: 7%;
+    top: -4.4%;
+    position: absolute;
+    left: 73%;
+    top: -20%;
+    cursor: pointer;
+}
+
+#ConteudoPrinExer{
+    background-color:rgb(0, 0, 0);
+    width: 197.4vh;
+    height: 85vh;
+    position: absolute;
+    left: 6.2%; 
+}
+
+#t{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 25vh;
+    height: 7vh;
+    font-size: 2.5vh;
+    background-color: rgb(61, 26, 203);
+    color: white;
+    border: white 0.3vh solid;
+    border-radius: 1vh;
+    cursor: pointer;
+    transition: 0.2s ease;
+    filter: none;
+    z-index: 2;
+}
+
+#Rodapék{
+    width: 197.4vh;
+    height: 34vh;
+    position: absolute;
+    left: 6.2%; 
+    top: 96%;
+    background-color: transparent;
+    box-shadow:  0 -0.2vh rgb(43, 43, 43);
+}
+
+#BodyExet{
+    height: 85vh;
+}
+
+#Tys{
+    color: white;
+    position: absolute;
+    left: 2.8%;
+    top: 3.8%;
+}
+
+#SeusEXe{
+    width: 187.4vh; 
+    height: 65vh; 
+    background-color:rgb(23, 23, 23);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 17%;
+    border-radius: 2vh;
+}
+
+.SituaçãoAtv{
+    width: 30vh;
+    height: 16vh;
+    position: relative;
+    text-decoration: none;
+    font-weight: none;
+    box-shadow: 0.3vh 0  rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.SituaçãoAtv h3{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3.6vh;
+}
+
+#SituaçãoAtvDiv{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    gap: 4.5vh;
+    left: 2%;
+    display: flex;
+    flex-direction: column;
+    filter: brightness(0.2);
+}
+
+#AtividadesContenir{
+    position: absolute;
+    top: 50%;
+    transform: translate(0,-50%);
+    left: 17%;
+    display: flex;
+    flex-direction: column;
+}
+
+.AtiDiv{
+    height: 16vh;
+    width: 150vh;
+    background-color: rgb(5, 4, 4);
+    overflow-x: scroll; 
+    scrollbar-width: thin; 
+    scrollbar-color: rgb(100, 100, 100) rgb(20, 20, 20); 
+}
+
+.AtiDiv::-webkit-scrollbar {
+    height: 2vh; 
+    width:  20vh;
+}
+
+.AtiDiv::-webkit-scrollbar-track {
+    background: rgb(20, 20, 20);
+}
+
+.AtiDiv::-webkit-scrollbar-thumb {
+    background: rgb(100, 100, 100); 
+}
+
+.AtvCont{
+    display: flex;
+    flex-direction: row;
+    border: 0.3vh  rgb(235, 235, 235) solid;
+    border-radius: 2vh;
+    overflow: hidden
+}
